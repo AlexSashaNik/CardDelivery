@@ -22,7 +22,7 @@ public class CardDeliveryTest {
     @Test
     public void shouldSuccessFillForm() {
         open("http://localhost:9999");
-        $("[data-test-id='city'] input").setValue("Москва");
+        $("[data-test-id='city'] input").setValue("Уфа");
         String bookedDate = makeDate(4, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME));
         $("[data-test-id='date'] input").sendKeys(bookedDate);
